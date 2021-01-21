@@ -1,4 +1,4 @@
-/*const { RichEmbed } = require('discord.js');
+const { RichEmbed } = require('discord.js');
 const BaseCommand = require('../../utils/structures/BaseCommand');
 const { MessageEmbed } = require('discord.js');
 const emojis = require("../../../emojis.json");
@@ -16,13 +16,19 @@ const ms = require('ms');
 
       if (message.channel.type === 'dm') { return message.reply(`> **${e.error} - Sorry, I can't run commands in DMs chat !**`); }
 
+    const ready = client.channels.cache.find(channel => channel.name === "status-bot"); 
+    var server = client.guilds.cache.get("664614587714240512");
+
 		const embed = new MessageEmbed()
 			.setAuthor(client.user.username, client.user.avatarURL())
 			.setTitle(`${e.folder} - Bot Info Overview :`)
 			.setThumbnail(client.user.displayAvatarURL())
 			.setColor('#0eafe0')
 			.setDescription(`● Here you can find some information for  \`${message.guild.me.displayName}\` Bot :`)
-			.addField(`> ${e.info}・Stats - (1) : `, `** Users : \` ${client.users.cache.size} \` **`)
+			.addField(`> ${e.info}・Stats - (1) : `, `** Users : \` ${server.memberCount} \` **`)
+
+//			.addField(`> ${e.info}・Stats - (1) : `, `** Users : \` ${client.users.cache.size} \` **`)
+
 			.addField(`> ${e.download}・Statistics - (1) : `, `** RAM Usage : \` ${(process.memoryUsage().rss / 1048576).toFixed()} MB \` **`)
 			.addField(`> ${e.ping}・Input - (2) : `, `** Ping : \` ${Date.now() - message.createdTimestamp}ms \` \n  Online for : \` ${ms(client.uptime, { long: true })} \` **`)
 			.addField(`> ${e.developer}・MoreInfo - (2) : `, `** Language : \` JavaScript \` \n   Prefix : \` ${client.prefix} \` **`)
@@ -35,4 +41,4 @@ const ms = require('ms');
 
 		message.channel.send(embed);
 	}
-}*/
+}

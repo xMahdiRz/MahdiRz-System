@@ -17,7 +17,7 @@ module.exports = class ReactionRoleCommand extends BaseCommand {
        embed: new MessageEmbed()
 
             .setColor(cyan)
-          .addField(`> **${e.ping}・Ping : **`, ` \n \`${Date.now() - message.createdTimestamp}\` MS`, true)
+          .addField(`> **${e.ping}・Ping : **`, ` \n \`${Date.now() - message.createdTimestamp} MS\``, true)
           .addField(`> **${e.info}・RAM Usage :**`, ` \n \`${(process.memoryUsage().rss / 1048576).toFixed()} MB\` `, true)
 
                  //     .setFooter(`${message.guild.me.displayName}`, client.user.displayAvatarURL())
