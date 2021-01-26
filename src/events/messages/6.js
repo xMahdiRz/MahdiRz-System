@@ -15,7 +15,7 @@ module.exports = class MessageEvent extends BaseEvent {
   if (message.author.id === client.user.id) return;
 
       if (message.author.send) {
-    message.react('675631664638197770')
+    message.react('803651156454408242')
 
     }
   } 
