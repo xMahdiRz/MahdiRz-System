@@ -15,13 +15,15 @@ module.exports = class MessageEvent extends BaseEvent {
   if (message.author.id === client.user.id) return;
 
       if (message.author.send) {
-    //message.react('🤍')
-  //  message.react('781919667135709205')
-    message.react('675631664638197770')
-   // message.react('675631722309615636')
- //   message.react('❤️')
+    //  message.react('🤍')
+    //  message.react('781919667135709205')
+    //  message.react('675631664638197770')
+      message.react('803651156517584917')
+    //  message.react('675631722309615636')
+    //   message.react('❤️')
 
   //  message.channel.send({files: ['https://cdn.probot.io/4wgr68igpP.png']})
+   message.channel.send("­")
 
     }
   } 
