@@ -1,4 +1,4 @@
-const Discord = require("discord.js");
+/*const Discord = require("discord.js");
 const BaseCommand = require('../../utils/structures/BaseCommand');
 const { MessageEmbed } = require('discord.js');
 const { cyan } = require("../../../colours.json");
@@ -16,7 +16,7 @@ module.exports = class WarnCommand extends BaseCommand {
 	run(client, message, args, lang) {
 
 
- let filter = m => m.author.id === message.author.id
+/* let filter = m => m.author.id === message.author.id
 
   let start = new MessageEmbed()
 
@@ -50,14 +50,11 @@ module.exports = class WarnCommand extends BaseCommand {
     })
   })
 
+*/
 
-
-
-
-
-  }    
+ /* }    
 }
-
+*/
 
 /*let filter = m => m.author.id === message.author.id
 
