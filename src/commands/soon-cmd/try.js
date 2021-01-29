@@ -35,7 +35,7 @@ module.exports = class WarnCommand extends BaseCommand {
 
         .addField(`edit`)
 
-      message.channel.send(titel).then(msg => {
+     message.channel.edit(titel).then(msg => {
         message.channel.awaitMessages(filter, {
           max: 1,
           time: 9999999,
