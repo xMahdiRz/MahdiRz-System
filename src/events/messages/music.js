@@ -11,13 +11,12 @@ module.exports = class MessageEvent extends BaseEvent {
 
   if (message.author.bot) return; 
 
-  if (message.channel.id != "719920829751623700") return; // روم الميوزك  
-  if (message.author.id === client.user.id) return;
+    if (message.channel.id != "805166570632249355") return; // روم الميوزك  
+    if (message.author.id === client.user.id) return;
 
-      if (message.author.send) {
-    message.react('675632039050870785')
-    message.react('675632038547685386')
-   message.channel.send({files: ['https://cdn.probot.io/4wgr68igpP.png']})
+    if (message.author.send) {
+      message.react('805175565379174511')
+      message.channel.send({files: ['https://cdn.probot.io/4wgr68igpP.png']})
 
     }
   } 
