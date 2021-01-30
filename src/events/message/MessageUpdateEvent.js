@@ -1,4 +1,4 @@
-/*const BaseEvent = require('../../utils/structures/BaseEvent');
+const BaseEvent = require('../../utils/structures/BaseEvent');
 const { MessageEmbed } = require('discord.js');
 const { green_light } = require("../../../colours.json");
 const emojis = require("../../../emojis.json");
@@ -34,4 +34,4 @@ module.exports = class MessageUodateEvent extends BaseEvent {
       channel.send(embed)
     } 
   }
-}*/
+}
