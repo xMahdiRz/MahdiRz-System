@@ -59,16 +59,17 @@ console.log(table.toString())*/
 
 	  	ready.send(embed);
 
-/*let g = client.guilds.cache.get("664614587714240512");
-let c = g.channels.cache.get("759833506066333706");
-if (c.type === 'voice') {
-	c.join();
-	setInterval(() => {
-		if (g.me.voiceChannel && g.me.voiceChannelID !== c.id || !g.me.voiceChannel) c.join();
-	}, 1);
-} else {
-	console.log('Failed To Join: \n The Channel Type isn "Listening."')
-}*/
+    let g = client.guilds.cache.get("664614587714240512");
+    let c = g.channels.cache.get("759833506066333706");
+    if (c.type === 'voice') {
+      c.join();
+      setInterval(() => {
+        if (g.me.voiceChannel && g.me.voiceChannelID !== c.id || !g.me.voiceChannel) c.join();
+      }, 1);
+    } else {
+      console.log('Failed To Join: \n The Channel Type isn "Listening."')
+    }
+
     let activities = [ 'Discord.gg/s-t', `My Perfix : ${client.prefix}`, '『 Soul Takers ☠ 』' ], i = 0;
     setInterval(() => client.user.setActivity(`${activities[i++ % activities.length]}`, { type: "PLAYING" }), 15000);
   }
