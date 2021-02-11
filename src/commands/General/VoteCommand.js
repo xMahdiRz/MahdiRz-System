@@ -5,7 +5,7 @@ let e = emojis;
 
 module.exports = class VoteCommand extends BaseCommand {
 	constructor() {
-		super('vote', 'General', ['probot'], 'vote');
+		super('probot', 'General', ['vote'], 'vote');
 	}
 
 	run(client, message, args, lang) {
