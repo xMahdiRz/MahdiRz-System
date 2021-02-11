@@ -16,6 +16,13 @@ module.exports = class VoteCommand extends BaseCommand {
 			.setColor('#5c0e48')
 			.setImage('https://cdn.probot.io/ELtAsaU0AP.gif')
 
+	.addFields(
+		{ name: 'Regular field title', value: 'Some value here' },
+		{ name: '\u200B', value: '\u200B' },
+		{ name: 'Inline field title', value: 'Some value here', inline: true },
+		{ name: 'Inline field title', value: 'Some value here', inline: true },
+	)
+
   		message.channel.send(embed)//.then(message => {message.delete({timeout: 10000})})
 //      help.addField(`**${e.mod}・Vote Tracker Cmd - (7) :**`, '`vt!vote`, `vt!votes`, `vt!leaderboard`, `vt!reminders`, `vt!reminders`, `vt!toggledm`, `vt!leaderboard`') 
 	}

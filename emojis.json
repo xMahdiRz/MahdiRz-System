@@ -26,5 +26,9 @@
 	"bot": "<:MG_Bot:764953607380140042>",
 	"AlertNews": "<a:MG_AlertNews:764953626678394884>",
 	"Discord": "<a:MG_Discord:764954741209432124>",
+	"PSB": "<:ST_PointBlue:783045298029199431>",
+	"PSG": "<:ST_PointGreen:785155990235906058>",
+	"PBG": "<:ST_Point1:781952599414407181>",
+	"PSR": "<:ST_PointRed:789213066960961536>",
 	"today": "<:MG_Today:762845776950198303>"
 }
