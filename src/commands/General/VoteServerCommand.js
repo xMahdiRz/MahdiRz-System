@@ -12,11 +12,11 @@ module.exports = class VoteCommand extends BaseCommand {
 
 		const embed = new MessageEmbed()
 
-      .setDescription(`> ** ${e.money} - صوت للبوت الآن عبر الرابط الموجود أدناه وأحصل على كريديت قد يصل إلى \`2700\` .** \n > ** ${e.error} -  ملاحظة : يمكنك التصويت كل 12 ساعة !**\n > **${e.channel}- http://i8.ae/z6kmK | ${message.author}**`)
+      .setDescription("> **<:ST_PointBlue:783045298029199431> ` vt!vote ` | للحصول على رابط التصويت ** \n > **<:ST_PointBlue:783045298029199431> ` vt!votes <user> ` | لمعرفة عدد التصويتات التي قمت بها أو قام بها شخص ما **  \n > **<:ST_PointBlue:783045298029199431> ` vt!leaderboard ` | لمعرفة أكبر الأعضاء الذين قامو بتصويت لسيرفر ** \n > **<:ST_PointBlue:783045298029199431> ` vt!reminders <on | off> ` | تمكين أو تعطيل التذكيرات التي ستذكرك كل 12 ساعة للتصويت ** \n > **<:ST_PointBlue:783045298029199431> ` vt!toggledm ` | تبديل ما إذا كنت تريد تلقي رسائل مباشرة لتأكيد التصويت أم لا **")
 			.setColor('#5c0e48')
 			.setImage('https://cdn.probot.io/ELtAsaU0AP.gif')
 
-  		message.channel.send(embed).then(message => {message.delete({timeout: 10000})})
+  		message.channel.send(embed)//.then(message => {message.delete({timeout: 10000})})
 //      help.addField(`**${e.mod}・Vote Tracker Cmd - (7) :**`, '`vt!vote`, `vt!votes`, `vt!leaderboard`, `vt!reminders`, `vt!reminders`, `vt!toggledm`, `vt!leaderboard`') 
 	}
 }
