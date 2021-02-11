@@ -12,18 +12,18 @@ module.exports = class VoteCommand extends BaseCommand {
 
 		const embed = new MessageEmbed()
 
-      .setDescription("> **<:ST_PointBlue:783045298029199431> ` vt!vote ` | للحصول على رابط التصويت ** \n > **<:ST_PointBlue:783045298029199431> ` vt!votes <user> ` | لمعرفة عدد التصويتات التي قمت بها أو قام بها شخص ما **  \n > **<:ST_PointBlue:783045298029199431> ` vt!leaderboard ` | لمعرفة أكبر الأعضاء الذين قامو بتصويت لسيرفر ** \n > **<:ST_PointBlue:783045298029199431> ` vt!reminders <on | off> ` | تمكين أو تعطيل التذكيرات التي ستذكرك كل 12 ساعة للتصويت ** \n > **<:ST_PointBlue:783045298029199431> ` vt!toggledm ` | تبديل ما إذا كنت تريد تلقي رسائل مباشرة لتأكيد التصويت أم لا **")
+      .setDescription(`> ** ${e.PBG} قائمة الأوامر الخاصة بـ بوت التصويت :**`)
 			.setColor('#5c0e48')
-			.setImage('https://cdn.probot.io/ELtAsaU0AP.gif')
+	//		.setImage('https://cdn.probot.io/ELtAsaU0AP.gif')
 
-	.addFields(
-		{ name: 'Regular field title', value: 'Some value here' },
-		{ name: '\u200B', value: '\u200B' },
-		{ name: 'Inline field title', value: 'Some value here', inline: true },
-		{ name: 'Inline field title', value: 'Some value here', inline: true },
-	)
-
-  		message.channel.send(embed)//.then(message => {message.delete({timeout: 10000})})
-//      help.addField(`**${e.mod}・Vote Tracker Cmd - (7) :**`, '`vt!vote`, `vt!votes`, `vt!leaderboard`, `vt!reminders`, `vt!reminders`, `vt!toggledm`, `vt!leaderboard`') 
+      .addFields(
+        { name: `> ${e.PSG} \` vt!votes <user> \``, value: `> **${e.PSB}  لمعرفة عدد التصويتات التي قمت بها أو قام بها شخص ما **` },
+        { name: `> ${e.PSG} \` vt!leaderboard \``, value: `> **${e.PSB} لمعرفة ترتيب الأعضاء الذين قامو بتصويت لسيرفر من الأكبر إلى الأصغر **` },
+        { name: `> ${e.PSG} \` vt!reminders <on | off> \``, value: `> **${e.PSB} تمكين أو تعطيل التذكيرات التي ستذكرك كل 12 ساعة للتصويت **` },
+        { name: `> ${e.PSG} \` vt!toggledm \``, value: `> **${e.PSB} تبديل ما إذا كنت تريد تلقي رسائل مباشرة لتأكيد التصويت أم لا **` },
+        { name: `> ${e.PSG} \` vt!profile \``, value: `> **${e.PSB} لرؤية البروفايل الخاص بك **` },
+        { name: `> **${e.links}・Links :**`, value: "> **[Link Invite](https://discord.gg/s-t) ● [Vote To Server](http://discord.com/users/579173324425527296) .**" }
+      )
+  		message.channel.send(embed)
 	}
 }
