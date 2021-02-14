@@ -12,6 +12,8 @@ module.exports = class EMuteCommand extends BaseCommand {
 
     if (message.channel.type === 'dm') { return message.reply(`> **${e.error} - عذرا , لايمكنني تشغيل هذا الأمر في الخاص !**`).then(message => {message.delete({timeout: 5000})}) }
 
+		message.delete();
+
     if ( !message.member.roles.cache.some(r=>["┃🏋🏻‍♀️︰Admins", "┃♖︰Moderators", "┃👩‍🔧︰Girls Mod", "┃👑︰Founders", "┃🔰︰Co Founder", "┃🛠︰Developpers", "┃⚡︰SYSTEM"].includes(r.name)) ) { return message.channel.send(`> **${e.error} - ${message.author} , ليس لديك الصلاحية لإستخدام هذا الأمر .**`).then(message => {message.delete({timeout: 10000})}) }
       else if (!args[0]) {
 
@@ -20,7 +22,7 @@ module.exports = class EMuteCommand extends BaseCommand {
 			try {
 				const muted = message.mentions.members.first(); 
 				const muter = message.author.tag; 
-				const channel = client.channels.cache.find(channel => channel.name === "┃🕹️︰pubg"); 
+				const channel = client.channels.cache.find(channel => channel.name === "┃🕹︰pubg"); 
 
 
         if (muted) {
