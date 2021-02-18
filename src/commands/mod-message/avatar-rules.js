@@ -25,7 +25,7 @@ module.exports = class ArtsRulesCommand extends BaseCommand {
 > <:ST_PointBlue:783045298029199431> يمكنك الإنضمام إلى السيرفرات الخاصة بالأفاترات ، فقط إضغط على الرابط !
 > <:ST_PointRed:789213066960961536> https://discord.gg/gif
 > <:ST_PointRed:789213066960961536> https://discord.gg/ju
-> <:ST_PointRed:789213066960961536> https://discord.gg/wjQHQJHC
+> <:ST_PointRed:789213066960961536> https://discord.gg/9my4SSZ2aa
 **`)
 	  .setImage('https://cdn.probot.io/adhZaxYTky.png')
   message.channel.send(embed).then(async (message) => {
