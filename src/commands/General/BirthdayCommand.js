@@ -39,24 +39,23 @@ module.exports = class BirthdayCommand extends BaseCommand {
 
 		const embed = new MessageEmbed()
 			.setColor(message.member.displayHexColor)
-			.setAuthor(`Suggestion :`, message.author.displayAvatarURL())
-      .addField(`${e.general}・Author :`, ` ${message.author}`)
-			.addField(`${e.info}・Content :`, '**' + args.join(" ") + '**' )
-			.setFooter(`『 Soul Takers ☠ 』`, 'https://cdn.probot.io/INqoBWuLZa.png')
-			.setTimestamp()
+			//.setAuthor(`Birthday :`, message.author.displayAvatarURL())
+      .addField(`> **${e.general}・User :**`, ` ${message.author}`, true)
+			.addField(`> **${e.info}・The Date :**`, '**' + args.join(" ") + '**' , true)
+			//.setFooter(`『 Soul Takers ☠ 』`, 'https://cdn.probot.io/INqoBWuLZa.png')
+			//.setTimestamp()
 
-    const Schannel = client.channels.cache.find(channel => channel.id === "719920804434935920"); //look for the channel called mod-logs
-		if (!Schannel) return message.channel.send(`> **${e.error} - ${message.author} , لا أستطيع العثور على الروم الخاصة بـ الإقتراحات !**`);
+    const Schannel = client.channels.cache.find(channel => channel.id === "813851591308214292"); 
+		if (!Schannel) return message.channel.send(`> **${e.error} - ${message.author} , لا أستطيع العثور على الروم الخاصة بـ أعياد الميلاد !**`);
 		Schannel.send(embed)
 
     .then(async (message) => {
-    await message.react(message.guild.emojis.cache.get('675632039050870785'));
-    await message.react(message.guild.emojis.cache.get('675632038547685386'));
+    await message.react("🎂");
   });
 
     Schannel.send({files: ['https://cdn.probot.io/4wgr68igpP.png']});
 
-		message.channel.send(`> **${e.check} - ${message.author} , تم إرسال الإقتراح بنجاح ، إذهب لتأكد !**`).then(message => {
+		message.channel.send(`> **${e.check} - ${message.author} , تم إرسال التاريخ إلى الإدارة بنجاح !**`).then(message => {
 					message.delete({
 						timeout: 5000
 					})
