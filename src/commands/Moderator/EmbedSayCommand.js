@@ -25,7 +25,7 @@ module.exports = class SayCommand extends BaseCommand {
 
     	const embed = new MessageEmbed()
 			.setDescription(argsResult)
-			.setColor('#92c7cf');
+			.setColor('RANDOM');
   
       channelName.send(embed); 
 
@@ -35,7 +35,7 @@ module.exports = class SayCommand extends BaseCommand {
 
     	const embed = new MessageEmbed()
 			.setDescription(argsResult)
-			.setColor('#92c7cf');
+			.setColor('RANDOM');
 
       message.channel.send(embed); 
     }
