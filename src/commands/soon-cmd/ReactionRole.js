@@ -13,7 +13,7 @@ let azkar = JSON.parse(fs.readFileSync("./azkar.json", "utf8"));
 
 module.exports = class ReactionRoleCommand extends BaseCommand {
 	constructor() {
-		super('reactionrole', 'owner', ['r0r'], 'reactionrole');
+		super('reactionrole', 'owner', ['0'], 'reactionrole');
 	}
 
 	run(client, message, args, lang) {
@@ -31,15 +31,15 @@ module.exports = class ReactionRoleCommand extends BaseCommand {
 		const embed = new MessageEmbed()
 
 	.setColor('#0099ff')
-	.setAuthor('xMuSaBx l مصعب', 'https://cdn.probot.io/NOhdjD7O9i.png', 'https://cdn.probot.io/NOhdjD7O9i.png')
+	.setAuthor('xMuSaBx l مصعب', 'https://cdn.probot.io/NOhdjD7O9i.png')
 	.setDescription(`> <a:370:748978646005448764><a:370:748978646005448764><a:370:748978646005448764><a:370:748978646005448764>
 > **<a:MG_Youtube:821790535852490782> | Youtube : [xMuSaBx l مصعب](https://bit.ly/xMuSaBx-YT)**
-> **<a:MG_Facebook:821790533818908732> | Facebook : [xMuSaBx](https://bit.ly/xMuSaBx-Fb)**
+> **<a:MG_Facebook:821790533818908732> | Facebook : [XMusabOC](https://bit.ly/xMuSaBx-Fb)**
 > **<a:MG_Instagram:821790546107957290> | Instagram : [@xmus3bx](https://bit.ly/xMuSaBx-Inst)**
 > **<a:MG_Discord:764954741209432124> | Discord : <@!332188711473119232> **
 > <a:370:748978646005448764><a:370:748978646005448764><a:370:748978646005448764><a:370:748978646005448764>
 `)
-	.setThumbnail('https://cdn.probot.io/NOhdjD7O9i.png')
+	//.setThumbnail('https://cdn.probot.io/NOhdjD7O9i.png')
 	.setImage('https://cdn.probot.io/c1E7IO0RX9.jpg')
 
 
