@@ -18,23 +18,29 @@ module.exports = class ReactionRoleCommand extends BaseCommand {
 
 	run(client, message, args, lang) {
 
-/*		const errorembed = new MessageEmbed()
+
+		const errorembed = new MessageEmbed()
 		.setDescription(`> **${e.error} - Sorry ${message.author} , this command is only for the owner of the bot.**`)
 		.setColor('#ff0000');
 		if (message.author.id !== '557711715610001428') return message.channel.send(errorembed);
 
-    const ServerNotifications = message.guild.roles.cache.get("762331094052896790")
-    const BotNotifications = message.guild.roles.cache.get("762330725499273276")
+ //   const ServerNotifications = message.guild.roles.cache.get("762331094052896790")
+ //   const BotNotifications = message.guild.roles.cache.get("762330725499273276")
+      let argsResult = args.join(" "); 
 
-  const embed = new MessageEmbed()
-    .setTitle(`・Open Notifications | إفتح الاشعارات`)
-    .setColor(cyan)
-    .setDescription(`> **🇺🇸 - Click on the reaction below to obtain the following notifications : ** \n > **🇱🇧 - إضغط على الرياكشن أدناه للحصول على الإشعارات التالية :**`)
-//    .addField(`${e.info}・All roles available | جميع الرتب المتوفرة` , `${e.AlertNews} - ${ServerNotifications.toString()}\n${e.Discord} - ${BotNotifications.toString()}`)
-		.setFooter(`© ManageGift's Community`, 'https://c.top4top.io/p_1742wpk2g1.png');
+		const embed = new MessageEmbed()
+
+	.setColor('#0099ff')
+	.setAuthor('xMuSaBx l مصعب', 'https://cdn.probot.io/NOhdjD7O9i.png', 'https://cdn.probot.io/NOhdjD7O9i.png')
+	.setDescription(argsResult)
+	.setThumbnail('https://cdn.probot.io/NOhdjD7O9i.png')
+	.setImage('https://cdn.probot.io/c1E7IO0RX9.jpg')
+
+
+
   message.channel.send(embed).then(async (message) => {
 
-  })*/
+  })
 
 /*let channelfind = message.content.split(" ").slice(1).join(" ")
 if(!channelfind) return message.channel.send("**setup [Channel]**")
