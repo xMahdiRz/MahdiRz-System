@@ -35,7 +35,7 @@
     "aki-api": "^5.1.1",
     "imdb-api": "^4.2.0",
    "ascii-table": "^0.0.9",
-  "aki-api": "^5.2.1",
+    "aki-api": "^5.2.1",
     "quick.db": "^7.1.2"
   }
 }
