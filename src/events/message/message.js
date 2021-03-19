@@ -2,6 +2,7 @@ const BaseEvent = require('../../utils/structures/BaseEvent');
 const { MessageEmbed } = require('discord.js');
 const emojis = require("../../../emojis.json");
 let e = emojis;
+const games = new Map()
 
 module.exports = class MessageEvent extends BaseEvent {
   constructor() {
@@ -85,6 +86,9 @@ if(message.content.startsWith('خط')){
 
       let args = message.content.slice(client.prefix.length).trim().split(/ +/g);
       let cmd = args.shift().toLowerCase();
+        let ops = {
+            games: games
+        }
       const command = client.commands.get(cmd);
       if (command) {
         command.run(client, message, args);

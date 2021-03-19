@@ -6,7 +6,7 @@ let e = emojis;
 const fs = require("fs")
 const db = require("quick.db");
 const { Aki } = require('aki-api');
-const { list, verify } = require('../../functions');
+const { list, verify } = require('./functions');
 const regions = ['person', 'object', 'animal'];
 
 let azkar = JSON.parse(fs.readFileSync("./azkar.json", "utf8"));
@@ -16,7 +16,8 @@ module.exports = class ReactionRoleCommand extends BaseCommand {
 		super('1', 'owner', ['r1r'], 'reactionrole');
 	}
 
-	run(client, message, args, lang) {
+	run(client, message, args, lang, ops) {
+
 	if (!message.channel.permissionsFor(client.user).has('EMBED_LINKS')) return message.channel.send('**Missing Permissions - [EMBED LINKS]!**');
 		if (!args[0]) return message.channel.send(`**What Category Do You Want To Use? Either \`${list(regions, 'or')}\`!**`);
 		let stringAki = args[0].toLowerCase();
