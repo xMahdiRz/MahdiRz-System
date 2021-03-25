@@ -54,7 +54,7 @@ module.exports = class SuggestCommand extends BaseCommand {
     await message.react(message.guild.emojis.cache.get('675632038547685386'));
   });
 
-    Schannel.send({files: ['https://cdn.probot.io/4wgr68igpP.png']});
+    Schannel.send({files: ['https://probot.media/4QiCoFnaSn.png']});
 
 		message.channel.send(`> **${e.check} - ${message.author} , تم إرسال الإقتراح بنجاح ، إذهب لتأكد !**`).then(message => {
 					message.delete({

@@ -15,7 +15,7 @@ message
 
       if (message.author.send) {
     message.react(message.guild.emojis.cache.get('675631842757443594'));
-    message.channel.send({files: ['https://cdn.probot.io/4wgr68igpP.png']});
+      message.channel.send({files: ['https://probot.media/4QiCoFnaSn.png']})
 
     }
   } 

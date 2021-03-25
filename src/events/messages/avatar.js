@@ -16,7 +16,7 @@ module.exports = class MessageEvent extends BaseEvent {
 
       if (message.author.send) {
     message.react('803651058316476418')
-    message.channel.send({files: ['https://cdn.probot.io/4wgr68igpP.png']})
+      message.channel.send({files: ['https://probot.media/4QiCoFnaSn.png']})
 
     }
   } 

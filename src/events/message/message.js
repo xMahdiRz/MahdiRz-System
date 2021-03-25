@@ -19,7 +19,7 @@ module.exports = class MessageEvent extends BaseEvent {
 if(message.content.startsWith('خط')){
 		if (message.author.id !== '579173324425527296' && message.author.id !== '557711715610001428' ) return;
 		message.delete();
-    message.channel.send({files: ['https://cdn.probot.io/4wgr68igpP.png']});  }
+    message.channel.send({files: ['https://probot.media/4QiCoFnaSn.png']});  }
 
 if(message.content.startsWith('ar')){
 		if (message.author.id !== '579173324425527296' && message.author.id !== '557711715610001428' ) return;

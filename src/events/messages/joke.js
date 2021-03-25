@@ -18,7 +18,7 @@ module.exports = class MessageEvent extends BaseEvent {
       message.react('😂')
       message.react('😑')
       message.react('🤮')
-      message.channel.send({files: ['https://cdn.probot.io/4wgr68igpP.png']})
+      message.channel.send({files: ['https://probot.media/4QiCoFnaSn.png']})
     }
   } 
 }

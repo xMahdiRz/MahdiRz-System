@@ -53,7 +53,7 @@ module.exports = class BirthdayCommand extends BaseCommand {
     await message.react("🎂");
   });
 
-    Schannel.send({files: ['https://cdn.probot.io/4wgr68igpP.png']});
+    Schannel.send({files: ['https://probot.media/4QiCoFnaSn.png']});
 
 		message.channel.send(`> **${e.check} - ${message.author} , تم إرسال التاريخ إلى الإدارة بنجاح !**`).then(message => {
 					message.delete({

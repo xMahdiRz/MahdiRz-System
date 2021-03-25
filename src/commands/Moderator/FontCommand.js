@@ -17,15 +17,7 @@ module.exports = class FontCommand extends BaseCommand {
 		if (message.author.send) {
 			message.delete();
 
-	/*	message.channel.send({
-				files: ['https://cdn.probot.io/4wgr68igpP.png']
-			});
-		message.channel.send('https://cdn.probot.io/4wgr68igpP.png');
-
-message.channel.send("Testing message.", { files: ["https://cdn.probot.io/4wgr68igpP.png"] });
-*/
-message.channel.send({ files: [{ attachment: 'https://cdn.probot.io/4wgr68igpP.png' }] });
-message.channel.send({ files: ['https://cdn.discordapp.com/attachments/719147597205340202/824626786717532241/unknown.png'] });
+        message.channel.send({ files: ['https://probot.media/4QiCoFnaSn.png'] });
 		}
 	}}
 }
