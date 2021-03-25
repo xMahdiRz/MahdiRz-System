@@ -6,7 +6,7 @@ let e = emojis;
 
 module.exports = class ReactionRoleCommand extends BaseCommand {
 	constructor() {
-		super('stats', 'owner', ['stats'], 'reactionrole');
+		super('stats', 'owner', ['stats'], '­');
 	}
 
 	run(client, message, args, lang) {

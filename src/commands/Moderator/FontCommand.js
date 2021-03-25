@@ -17,10 +17,14 @@ module.exports = class FontCommand extends BaseCommand {
 		if (message.author.send) {
 			message.delete();
 
-			message.channel.send({
+	/*	message.channel.send({
 				files: ['https://cdn.probot.io/4wgr68igpP.png']
 			});
+		message.channel.send('https://cdn.probot.io/4wgr68igpP.png');
 
+message.channel.send("Testing message.", { files: ["https://cdn.probot.io/4wgr68igpP.png"] });
+*/
+message.channel.send({  files: [{attachment: 'https://cdn.probot.io/4wgr68igpP.png'}] });
 		}
 	}}
 }
