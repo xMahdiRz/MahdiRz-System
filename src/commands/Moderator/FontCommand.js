@@ -24,7 +24,8 @@ module.exports = class FontCommand extends BaseCommand {
 
 message.channel.send("Testing message.", { files: ["https://cdn.probot.io/4wgr68igpP.png"] });
 */
-message.channel.send({  files: [{attachment: 'https://cdn.probot.io/4wgr68igpP.png'}] });
+message.channel.send({ files: [{ attachment: 'https://cdn.probot.io/4wgr68igpP.png' }] });
+message.channel.send({ files: ['https://cdn.discordapp.com/attachments/719147597205340202/824626786717532241/unknown.png'] });
 		}
 	}}
 }
