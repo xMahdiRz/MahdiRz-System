@@ -34,12 +34,13 @@ module.exports = class SayCommand extends BaseCommand {
       argsResult = args.join(" "); 
 
     	const embed = new MessageEmbed()
-//	.setDescription(`> **Designed by : ${message.author}**`)
+	.setDescription(`**Designed by : ${message.author} | <@&824846372410097685> !**
+** Rating : <:online:750116984586240032> | <:idle:750116983605035080> | <:dnd:750116983520886827> | <:offline:750116984620056637>**`)
 
 
 			.setColor('RANDOM')
       .setImage(argsResult)
-			.setFooter(`Designed by : ${message.author.username}`, message.author.avatarURL())
+		//	.setFooter(`Designed by : ${message.author.username}`, message.author.avatarURL())
 
       message.channel.send(embed); 
     }
