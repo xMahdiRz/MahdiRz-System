@@ -7,7 +7,7 @@ let e = emojis;
 
 module.exports = class ArtsRulesCommand extends BaseCommand {
 	constructor() {
-		super('xmusabx', 'mod-message', ['xmusabx'], 'xmusabx', 'xmusabx');
+		super('m', 'mod-message', ['xmusabx'], 'xmusabx', 'xmusabx');
 	}
 
 	run(client, message, args, lang) {
@@ -26,6 +26,7 @@ module.exports = class ArtsRulesCommand extends BaseCommand {
 > **<a:MG_Youtube:821790535852490782> | Youtube : [xMuSaBx l مصعب](https://bit.ly/xMuSaBx-YT)**
 > **<a:MG_Facebook:821790533818908732> | Facebook : [XMusabOC](https://bit.ly/xMuSaBx-Fb)**
 > **<a:MG_Instagram:821790546107957290> | Instagram : [@xmus3bx](https://bit.ly/xMuSaBx-Inst)**
+> **<a:MG_Twitch:825069776216784976> | Twitch : [xmus3bx](https://bit.ly/xMuSaBx-Twi)**
 > **<a:MG_Discord:825030310507839488> | Discord : <@!332188711473119232> **
 > <a:370:748978646005448764><a:370:748978646005448764><a:370:748978646005448764><a:370:748978646005448764>
 `)
