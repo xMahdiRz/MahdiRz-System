@@ -18,7 +18,7 @@ module.exports = class ArtsRulesCommand extends BaseCommand {
 	if (message.author.id !== '579173324425527296' && message.author.id !== '557711715610001428' ) return;
 
 		message.delete();
-		const embed = new MessageEmbed()
+		const xmusabx = new MessageEmbed()
 
 	.setColor('#0099ff')
 	.setAuthor('xMuSaBx l مصعب', 'https://cdn.probot.io/NOhdjD7O9i.png')
@@ -32,9 +32,25 @@ module.exports = class ArtsRulesCommand extends BaseCommand {
 	//.setThumbnail('https://cdn.probot.io/NOhdjD7O9i.png')
 	.setImage('https://cdn.probot.io/c1E7IO0RX9.jpg')
 
+  message.channel.send(xmusabx)
 
+    message.channel.send({files: ['https://probot.media/4QiCoFnaSn.png']})
 
-  message.channel.send(embed)
+		const xsame7x = new MessageEmbed()
+
+	.setColor('#0099ff')
+	.setAuthor('xSaMe7x l سامح', 'https://cdn.probot.io/1YtFk59Bdk.png')
+	.setDescription(`> <a:370:748978646005448764><a:370:748978646005448764><a:370:748978646005448764><a:370:748978646005448764>
+> **<a:MG_Youtube:821790535852490782> | Youtube : [xMuSaBx l مصعب](https://bit.ly/xMuSaBx-YT)**
+> **<a:MG_Facebook:821790533818908732> | Facebook : [XMusabOC](https://bit.ly/xMuSaBx-Fb)**
+> **<a:MG_Instagram:821790546107957290> | Instagram : [@xmus3bx](https://bit.ly/xMuSaBx-Inst)**
+> **<a:MG_Discord:825030310507839488> | Discord : <@!332188711473119232> **
+> <a:370:748978646005448764><a:370:748978646005448764><a:370:748978646005448764><a:370:748978646005448764>
+`)
+	//.setThumbnail('https://cdn.probot.io/NOhdjD7O9i.png')
+	.setImage('https://cdn.probot.io/c1E7IO0RX9.jpg')
+
+  message.channel.send(xsame7x)
 
  } 
  }
