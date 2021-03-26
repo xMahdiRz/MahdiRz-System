@@ -10,39 +10,38 @@ module.exports = class SayCommand extends BaseCommand {
 
   run(client, message, args) {
 
-   if (message.channel.type === 'dm') { return message.reply(`> **${e.error} - Sorry, I can't run commands in DMs chat !**`); }
+   if (message.channel.type === 'dm') { return message.reply(`> **${e.error} - عذرا لا يمكنك إستخدام هذا الأمر في الخاص !**`); }
 
-    if(!message.member.hasPermission(["ADMINISTRATOR"])) return message.channel.send(`> **${e.error} - ${message.author} , You do not have permission to use this command!`);
-        
-    let argsResult;
+           if ( !message.member.roles.cache.some(r=>["┃🎨︰Designers"].includes(r.name)) ) { return message.channel.send(`> **${e.error} - ${message.author} , ليس لديك الصلاحية لإستخدام هذا الأمر .**`).then(message => {message.delete({timeout: 10000})}) }
+   if (!args[0]) {
+
+      message.channel.send(`> **${e.error} - ${message.author} , يجب عليك كتابة الإقتراح لإكمال العملية .**`).then(message => {message.delete({timeout: 10000})})
+		} else {
+
+  let argsResult;
     let channelName = message.mentions.channels.first(); 
 
-    message.delete(); 
-
-
-    if(channelName){
-      argsResult = args.slice(1).join(" "); 
-
-    	const embed = new MessageEmbed()
-			.setDescription(argsResult)
-			.setColor('RANDOM');
-  
-      channelName.send(embed); 
-
-    } else {
+    message.delete();    
 
       argsResult = args.join(" "); 
 
     	const embed = new MessageEmbed()
-	.setDescription(`**Designed by : ${message.author} | <@&824846372410097685> !**
-** Rating : <:online:750116984586240032> | <:idle:750116983605035080> | <:dnd:750116983520886827> | <:offline:750116984620056637>**`)
+	.setDescription(`**Designed by : ${message.author}**
+** Rating : <a:217:675632039050870785> | <a:218:675632038547685386>**`)
 
 
-			.setColor('RANDOM')
+			.setColor('#e1b1f8')
       .setImage(argsResult)
 		//	.setFooter(`Designed by : ${message.author.username}`, message.author.avatarURL())
 
-      message.channel.send(embed); 
-    }
-  }
+      message.channel.send(embed)  .then(async (message) => {
+    await message.react('675632039050870785')
+    await message.react('675632038547685386')
+  });
+		message.channel.send(`> **${e.check} - ${message.author} , تم إرسال التصميم بنجاح ، إذهب لتأكد !**`).then(message => {
+					message.delete({
+						timeout: 10000
+					})
+				})
+  } }
 }
