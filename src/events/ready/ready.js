@@ -49,7 +49,7 @@ console.log(table.toString())*/
 
     client.user.setStatus("dnd")
 
-    const ready = client.channels.cache.find(channel => channel.name === "status-bot"); 
+    const ready = client.channels.cache.find(channel => channel.name === "system-status"); 
     var server = client.guilds.cache.get("664614587714240512");
 
 		let embed = new MessageEmbed()
