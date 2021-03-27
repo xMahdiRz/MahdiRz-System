@@ -69,10 +69,7 @@ console.log(table.toString())*/
     } else {
       console.log('Failed To Join: \n The Channel Type isn "Listening."')
     }
-   client.guilds.forEach((guild) => {
-        console.log(guild.name)
-
-    })
+ 
     let activities = [ 'Discord.gg/s-t', `My Perfix : ${client.prefix}`, '『 Soul Takers ☠ 』' ], i = 0;
     setInterval(() => client.user.setActivity(`${activities[i++ % activities.length]}`, { type: "PLAYING" }), 15000);
   }
