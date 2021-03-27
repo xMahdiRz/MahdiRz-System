@@ -17,11 +17,11 @@ module.exports = class ArtsRulesCommand extends BaseCommand {
 
 	if (message.author.id !== '579173324425527296' && message.author.id !== '557711715610001428' ) return;
 
-		message.delete();
+	//	message.delete();
 
 	const mnaiir = new MessageEmbed()
 
-	.setColor('#0099ff')
+	.setColor('#e08594')
 	.setAuthor('Mnaiir l مناير', 'https://yt3.ggpht.com/ytc/AAUvwng4uqWFtqsnLUde02vymOUlr8IqP8Z5w5bwv5yrHw=s88-c-k-c0x00ffffff-no-rj')
 	.setDescription(`> <a:370:748978646005448764><a:370:748978646005448764><a:370:748978646005448764><a:370:748978646005448764>
 > **<a:MG_Youtube:821790535852490782> | Youtube : [منـآير•MnAiiR](https://bit.ly/MNAIIR-YT)**
@@ -33,9 +33,9 @@ module.exports = class ArtsRulesCommand extends BaseCommand {
 	.setImage('https://yt3.ggpht.com/nbOWtGSGV1B_XQZHc6DizCQ5QT9lmP_isDlXm9jcHv_GGKIvyHPTOQdo4eGqo2auM7jnufwD=w1280-fcrop64=1,32b75a57cd48a5a8-k-c0xffffffff-no-nd-rj')
   message.channel.send(mnaiir)
 
-		const xsame7x = new MessageEmbed()
+	/*	const xsame7x = new MessageEmbed()
 
-	.setColor('RED')
+	.setColor('#00a8f1')
 	.setAuthor('xSaMe7x l سامح', 'https://cdn.probot.io/1YtFk59Bdk.png')
 	.setDescription(`> <a:370:748978646005448764><a:370:748978646005448764><a:370:748978646005448764><a:370:748978646005448764>
 > **<a:MG_Youtube:821790535852490782> | Youtube : [xSaMe7x l سامح](https://bit.ly/xSaMe7x-YT)**
@@ -50,9 +50,9 @@ module.exports = class ArtsRulesCommand extends BaseCommand {
 
   message.channel.send(xsame7x)
 
-const bulahab = new MessageEmbed()
+    const bulahab = new MessageEmbed()
 
-      .setColor('RED')
+      .setColor('#f54a04')
       .setAuthor('Bulahab l بولهب', 'https://yt3.ggpht.com/ytc/AAUvwngnmYUckS_aR_M4UMZkn3rlm3TSbi8qXgKiGU3IRw=s88-c-k-c0x00ffffff-no-rj')
       .setDescription(`> <a:370:748978646005448764><a:370:748978646005448764><a:370:748978646005448764><a:370:748978646005448764>
     > **<a:MG_Youtube:821790535852490782> | Youtube : [BuLahaB I بولهب](https://bit.ly/BuLahaB-YT)**
@@ -70,7 +70,7 @@ const bulahab = new MessageEmbed()
 
 		const xmusabx = new MessageEmbed()
 
-	.setColor('#0099ff')
+	.setColor('#bc1414')
 	.setAuthor('xMuSaBx l مصعب', 'https://cdn.probot.io/NOhdjD7O9i.png')
 	.setDescription(`> <a:370:748978646005448764><a:370:748978646005448764><a:370:748978646005448764><a:370:748978646005448764>
 > **<a:MG_Youtube:821790535852490782> | Youtube : [xMuSaBx l مصعب](https://bit.ly/xMuSaBx-YT)**
@@ -82,7 +82,7 @@ const bulahab = new MessageEmbed()
 `)
 	.setImage('https://cdn.probot.io/c1E7IO0RX9.jpg')
 
-  message.channel.send(xmusabx)
+  message.channel.send(xmusabx)*/
 
      } 
  }
