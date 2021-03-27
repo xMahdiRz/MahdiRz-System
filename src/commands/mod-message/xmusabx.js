@@ -19,7 +19,7 @@ module.exports = class ArtsRulesCommand extends BaseCommand {
 
 	//	message.delete();
 
-	const mnaiir = new MessageEmbed()
+/*	const mnaiir = new MessageEmbed()
 
 	.setColor('#e08594')
 	.setAuthor('Mnaiir l مناير', 'https://yt3.ggpht.com/ytc/AAUvwng4uqWFtqsnLUde02vymOUlr8IqP8Z5w5bwv5yrHw=s88-c-k-c0x00ffffff-no-rj')
@@ -33,7 +33,7 @@ module.exports = class ArtsRulesCommand extends BaseCommand {
 	.setImage('https://yt3.ggpht.com/nbOWtGSGV1B_XQZHc6DizCQ5QT9lmP_isDlXm9jcHv_GGKIvyHPTOQdo4eGqo2auM7jnufwD=w1280-fcrop64=1,32b75a57cd48a5a8-k-c0xffffffff-no-nd-rj')
   message.channel.send(mnaiir)
 
-	/*	const xsame7x = new MessageEmbed()
+		const xsame7x = new MessageEmbed()
 
 	.setColor('#00a8f1')
 	.setAuthor('xSaMe7x l سامح', 'https://cdn.probot.io/1YtFk59Bdk.png')
@@ -63,11 +63,11 @@ module.exports = class ArtsRulesCommand extends BaseCommand {
     > **<a:MG_Discord:825030310507839488> | Discord : <@!590671974863470592> **
     > <a:370:748978646005448764><a:370:748978646005448764><a:370:748978646005448764><a:370:748978646005448764>
     `)
-      .setImage('https://yt3.ggpht.com/CZtLMY8NpU0wSF8w9jLOxENdNcccrcmeEdKQlRfap4OWod8taPTxJdeF-ZLlE5u4khjpDK_k=w1280-fcrop64=1,32b75a57cd48a5a8-k-c0xffffffff-no-nd-rj')
+      .setImage('https://cdn.discordapp.com/attachments/719920182952329276/825216714350002236/channels4_banner.jpg')
 
       message.channel.send(bulahab)
 
-
+*/
 		const xmusabx = new MessageEmbed()
 
 	.setColor('#bc1414')
@@ -82,7 +82,6 @@ module.exports = class ArtsRulesCommand extends BaseCommand {
 `)
 	.setImage('https://cdn.probot.io/c1E7IO0RX9.jpg')
 
-  message.channel.send(xmusabx)*/
-
+  message.channel.send(xmusabx)
      } 
  }
