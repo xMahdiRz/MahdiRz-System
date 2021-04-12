@@ -15,11 +15,16 @@ module.exports = class MessageEvent extends BaseEvent {
    if(message.content.match('<@!784852021333065738>')){
      message.channel.send(`> **${e.info} - Hi ! ${message.author} My Prefix is : \`${client.prefix}\`.**`);
   }
-
 if(message.content.startsWith('خط')){
 		if (message.author.id !== '579173324425527296' && message.author.id !== '557711715610001428' ) return;
 		message.delete();
     message.channel.send({files: ['https://probot.media/4QiCoFnaSn.png']});  }
+
+
+if(message.content.startsWith('خرمضان')){
+		if (message.author.id !== '579173324425527296' && message.author.id !== '557711715610001428' ) return;
+		message.delete();
+    message.channel.send({files: ['https://probot.media/ceXIXh4sTk.png']});  }
 
 if(message.content.startsWith('ar')){
 		if (message.author.id !== '579173324425527296' && message.author.id !== '557711715610001428' ) return;
