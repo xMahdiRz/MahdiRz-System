@@ -23,7 +23,7 @@ if(message.content.startsWith('خط')){
 if(message.content.startsWith('خ2')){
 		if (message.author.id !== '579173324425527296' && message.author.id !== '557711715610001428' ) return;
 		message.delete();
-    message.channel.send({files: ['https://probot.media/09nrJj0FVr.png']});  }
+    message.channel.send({files: ['https://probot.media/k1MFLUvf1r.png']});  }
 
 
 if(message.content.startsWith('خ1')){
