@@ -25,7 +25,7 @@ module.exports = class BanCommand extends BaseCommand {
 		} else {
 
       try {
-				const banned = await message.mentions.members.first(); //get the first member that was mentioned
+				const banned = message.mentions.members.first(); //get the first member that was mentioned
 				const banner = message.author.tag; //get the user that sent the command
 	    	const reason = args.join(" ").slice(22); //get the second argument
 				const channel = client.channels.cache.find(channel => channel.name === "ban-kick-logs"); //attempt to find the channel called mod-logs
@@ -35,7 +35,7 @@ module.exports = class BanCommand extends BaseCommand {
 
           if (!message.guild.member(banned).bannable) return message.channel.send(`> **${e.error} - That user is not bannable.**`);
 
-					await banned.ban(); 
+					 
 
 					message.channel.send(`> **${e.check} - \`${banned.user.tag}\` was banned successfully**`);
 
@@ -55,13 +55,13 @@ module.exports = class BanCommand extends BaseCommand {
 
 			  		.setColor('#ff0000')
 						.setTitle(`${e.error}・You have been banned from : \`${message.guild.name}\` Server`)
-						.setThumbnail('https://c.top4top.io/p_1742wpk2g1.png')
+						.setThumbnail('https://cdn.probot.io/INqoBWuLZa.png')
 						.addField(`${e.check}・Reason :`, ` ${reason}`)
 						.setTimestamp()
 						.setFooter(`© ${message.guild.me.displayName}`, client.user.displayAvatarURL());
 
 					banned.send(AlertBanEmbed).catch(error => { console.error(`${error}`)})
-
+banned.ban();
 				} else {
 					message.channel.send(`> **${e.error} - ${message.author} , Member not found.**`);
 				}
