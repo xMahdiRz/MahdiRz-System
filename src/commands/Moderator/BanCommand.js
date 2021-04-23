@@ -61,7 +61,7 @@ module.exports = class BanCommand extends BaseCommand {
 						.setFooter(`© ${message.guild.me.displayName}`, client.user.displayAvatarURL());
 
 					banned.send(AlertBanEmbed).catch(error => { console.error(`${error}`)})
-banned.ban();
+//banned.ban();
 				} else {
 					message.channel.send(`> **${e.error} - ${message.author} , Member not found.**`);
 				}
