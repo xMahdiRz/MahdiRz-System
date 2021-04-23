@@ -1,4 +1,4 @@
-const BaseCommand = require('../../utils/structures/BaseCommand');
+/*const BaseCommand = require('../../utils/structures/BaseCommand');
 const { MessageEmbed } = require('discord.js');
 const { purple_medium } = require("../../../colours.json");
 const emojis = require("../../../emojis.json");
@@ -70,4 +70,4 @@ module.exports = class BanCommand extends BaseCommand {
 			}
 		}
 	}
-}
+}*/
